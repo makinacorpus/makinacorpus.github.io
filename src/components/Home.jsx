@@ -50,21 +50,17 @@ const PluginList = ({ category }) => (
   )
 );
 
-const categoryDetails = [
-  {
-    title: 'Leaflet',
-  },
-  {
-    title: 'Django',
-  },
-];
+const arrayDedup = arr => Array.from(new Set(arr));
+const categoryDetails = arrayDedup(data.map(cur => cur.categorie));
 
 const App = () => (
   <>
-    <h2>Leaflet</h2>
-    <PluginList category="Leaflet" />
-    <h2>Django</h2>
-    <PluginList category="Django" />
+    {categoryDetails.map(categories => (
+      <>
+        <h2>{categories}</h2>
+        <PluginList category={categories} />
+      </>
+    ))}
   </>
 );
 
