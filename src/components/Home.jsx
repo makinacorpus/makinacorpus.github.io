@@ -11,32 +11,30 @@ import data from '../data.json';
 const MediaCard = ({ plugin }) => (
   <Card sx={{ display: 'flex' }}>
     <CardContent sx={{ width: '510px' }}>
-      <Typography gutterBottom variant="h5" component="div">
+      <Typography gutterBottom variant="h3">
         {plugin.name}
       </Typography>
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="h4" color="text.secondary">
         {plugin.description}
       </Typography>
     </CardContent>
     <CardActions>
       {plugin.github
         && (
-          <Button href={plugin.github}>
-            <GitHubIcon size="small" />
+          <Button href={plugin.github} startIcon={<GitHubIcon size="small" />}>
             Github
           </Button>
         )}
       {plugin.npm
         && (
-          <Button href={`https://www.npmjs.com/package/${plugin.npm}`}>
-            <DownloadIcon size="small" />
+          <Button href={`https://www.npmjs.com/package/${plugin.npm}`} startIcon={<DownloadIcon size="small" />}>
             {plugin.npm}
           </Button>
         )}
       {plugin.demo
         && (
-          <Button href={plugin.demo}>
-            <SlideshowIcon size="small" />
+          <Button href={plugin.demo} startIcon={<SlideshowIcon size="small" />}>
+
             demo
           </Button>
         )}
@@ -57,7 +55,7 @@ const App = () => (
   <>
     {categoryDetails.map(categories => (
       <>
-        <h2>{categories}</h2>
+        <Typography variant="h2">{categories}</Typography>
         <PluginList category={categories} />
       </>
     ))}
