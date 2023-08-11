@@ -1,0 +1,116 @@
+[
+    {
+        "name": "Leaflet.Filelayer",
+        "github": "https://github.com/makinacorpus/Leaflet.FileLayer/",
+        "npm": "leaflet-filelayer",
+        "demo": "https://tompsr.github.io/Leaflet.FileLayer/",
+        "description": " Loads files locally (GeoJSON, KML, GPX) as layers using HTML5 File API",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.GeometryUtil",
+        "github": "https://github.com/makinacorpus/Leaflet.GeometryUtil",
+        "npm": "leaflet-geometryutil",
+        "description": "Leaflet utility function on geometries",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.TextPath",
+        "github": "https://github.com/makinacorpus/Leaflet.TextPath",
+        "npm": "leaflet-textpath",
+        "demo": "https://makinacorpus.github.io/Leaflet.TextPath/",
+        "description": "Show text along Polyline with Leaflet",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.Snap",
+        "github": "https://github.com/makinacorpus/Leaflet.Snap",
+        "npm": "leaflet-snap",
+        "demo": "https://makinacorpus.github.io/Leaflet.Snap/",
+        "description": "Enables snapping of draggable markers to polylines and other layers",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.LineExtremities",
+        "github": "https://github.com/makinacorpus/Leaflet.LineExtremities",
+        "demo": "https://makinacorpus.github.io/Leaflet.LineExtremities/",
+        "description": "Displays the extremities of a Polyline",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.RestoreView",
+        "github": "https://github.com/makinacorpus/Leaflet.RestoreView",
+        "npm": "@bagage/leaflet.restoreview",
+        "demo": "https://makinacorpus.github.io/Leaflet.RestoreView/",
+        "description": "Save and restore view from localStorage",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.Social",
+        "github": "https://github.com/makinacorpus/Leaflet.Social",
+        "demo": "https://makinacorpus.github.io/Leaflet.Social/",
+        "description": "Very simple yet effective sharing buttons Leaflet control",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.PolylineHandles",
+        "github": "https://github.com/makinacorpus/Leaflet.PolylineHandles",
+        "demo": "https://makinacorpus.github.io/Leaflet.PolylineHandles/",
+        "description": "Allows to grab intermediary points on a polyline",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.LayerIndex",
+        "github": "https://github.com/makinacorpus/Leaflet.LayerIndex",
+        "npm": "leaflet-layerindex",
+        "demo": "https://makinacorpus.github.io/Leaflet.LayerIndex/",
+        "description": "Spatial index of layer objects using RTree.js",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.MeasureControl",
+        "github": "https://github.com/makinacorpus/Leaflet.MeasureControl",
+        "npm": "leaflet.measurecontrol",
+        "demo": "https://makinacorpus.github.io/Leaflet.MeasureControl/",
+        "description": "Leaflet control to mesure distances on the map",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.Spin",
+        "github": "https://github.com/makinacorpus/Leaflet.Spin#leafletspin",
+        "npm": "leaflet-spin",
+        "demo": "https://makinacorpus.github.io/Leaflet.Spin/",
+        "description": "Show a spinner on the map using Spin.js",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.AlmostOver",
+        "github": "https://github.com/makinacorpus/Leaflet.AlmostOver#leafletalmostover",
+        "npm": "leaflet-almostover",
+        "demo": "https://makinacorpus.github.io/Leaflet.AlmostOver/",
+        "description": "Trigger mouse events when cursor is almost over a layer",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.ForbiddenArea",
+        "github": "https://github.com/makinacorpus/Leaflet.ForbiddenArea",
+        "npm": "leaflet-forbiddenarea",
+        "demo": "https://makinacorpus.github.io/Leaflet.ForbiddenArea/",
+        "description": "Prohibit the placement of markers if they are too close to another layer",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.OverIntent",
+        "github": "https://github.com/makinacorpus/Leaflet.OverIntent",
+        "npm": "leaflet-overintent",
+        "demo": "https://makinacorpus.github.io/Leaflet.OverIntent/",
+        "description": "Adds a mouseintent event that guess user intentions to hover layers",
+        "categorie": "Leaflet"
+    },
+    {
+        "name": "Leaflet.Compass",
+        "github": "https://github.com/makinacorpus/Leaflet.Compass",
+        "description": "Compass Plugin for leaflet and PhoneGap application",
+        "categorie": "Leaflet"
+    }
+]
