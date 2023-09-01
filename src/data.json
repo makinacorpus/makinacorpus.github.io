@@ -1,7 +1,7 @@
 [
     {
         "name": "Leaflet.Filelayer",
-        "github": "https://github.com/makinacorpus/Leaflet.FileLayer/",
+        "github": "https://github.com/makinacorpus/Leaflet.FileLayer",
         "npm": "leaflet-filelayer",
         "demo": "https://tompsr.github.io/Leaflet.FileLayer/",
         "description": " Loads files locally (GeoJSON, KML, GPX) as layers using HTML5 File API",

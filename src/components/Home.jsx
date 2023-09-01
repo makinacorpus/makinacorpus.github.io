@@ -1,42 +1,47 @@
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import DownloadIcon from '@mui/icons-material/Download';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
+import { IconButton, Stack, Tooltip } from '@mui/material';
+import NpmIcon from '../icons/NpmIcon';
 import data from '../data.json';
 
 const MediaCard = ({ plugin }) => (
   <Card sx={{ display: 'flex' }}>
-    <CardContent sx={{ width: '510px' }}>
-      <Typography gutterBottom variant="h3">
+    <CardContent sx={{ width: '100%' }}>
+      <Typography gutterBottom variant="h5">
         {plugin.name}
       </Typography>
-      <Typography variant="h4" color="text.secondary">
+      <Typography variant="body" color="text.secondary">
         {plugin.description}
       </Typography>
     </CardContent>
     <CardActions>
       {plugin.github
         && (
-          <Button href={plugin.github} startIcon={<GitHubIcon size="small" />}>
-            Github
-          </Button>
+          <Tooltip title="Github">
+            <IconButton href={plugin.github}>
+              <GitHubIcon size="small" />
+            </IconButton>
+          </Tooltip>
         )}
       {plugin.npm
         && (
-          <Button href={`https://www.npmjs.com/package/${plugin.npm}`} startIcon={<DownloadIcon size="small" />}>
-            {plugin.npm}
-          </Button>
+          <Tooltip title={plugin.npm}>
+            <IconButton href={`https://www.npmjs.com/package/${plugin.npm}`}>
+              <NpmIcon size="small" />
+            </IconButton>
+          </Tooltip>
         )}
       {plugin.demo
         && (
-          <Button href={plugin.demo} startIcon={<SlideshowIcon size="small" />}>
-
-            demo
-          </Button>
+          <Tooltip title="Demo">
+            <IconButton href={plugin.demo}>
+              <SlideshowIcon size="small" />
+            </IconButton>
+          </Tooltip>
         )}
     </CardActions>
   </Card>
