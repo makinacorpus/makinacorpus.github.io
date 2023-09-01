@@ -17,6 +17,23 @@ const MediaCard = ({ plugin }) => (
       <Typography variant="body" color="text.secondary">
         {plugin.description}
       </Typography>
+      <Stack direction="row" spacing={1} mt={2}>
+        {plugin.github && (
+          <a href={plugin.github}>
+            <img alt="npm" src={`https://img.shields.io/github/stars${(new URL(plugin.github)).pathname}?style=flat&logo=github&logoColor=white&labelColor=8a32a9&color=555555`} />
+          </a>
+        )}
+        {plugin.npm && (
+          <>
+            <a href={`https://www.npmjs.com/package/${plugin.npm}`}>
+              <img alt="npm" src={`https://img.shields.io/npm/v/${plugin.npm}?style=flat&logo=npm&logoColor=white&label=${plugin.npm}&labelColor=CB3837&color=555555`} />
+            </a>
+            <a href={`https://www.npmjs.com/package/${plugin.npm}`}>
+              <img alt="npm" src={`https://img.shields.io/npm/dt/${plugin.npm}?style=flat&logo=npm&logoColor=white&labelColor=CB3837&color=555555`} />
+            </a>
+          </>
+        )}
+      </Stack>
     </CardContent>
     <CardActions>
       {plugin.github
