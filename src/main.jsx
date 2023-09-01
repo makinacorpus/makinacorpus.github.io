@@ -15,9 +15,21 @@ import App from './App';
 const queryClient = new QueryClient();
 
 const theme = responsiveFontSizes(createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          borderTop: '5px solid #d0dd2a',
+        },
+      },
+    },
+  },
   palette: {
     primary: {
       main: '#adb31b',
+    },
+    background: {
+      default: '#fafafa',
     },
   },
 }));
