@@ -1,64 +1,22 @@
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import DownloadIcon from '@mui/icons-material/Download';
-import SlideshowIcon from '@mui/icons-material/Slideshow';
+import { Box } from '@mui/material';
+import MakinaLogo from '../icons/MakinaOSS-white.svg';
+
 import data from '../data.json';
-
-const MediaCard = ({ plugin }) => (
-  <Card sx={{ display: 'flex' }}>
-    <CardContent sx={{ width: '510px' }}>
-      <Typography gutterBottom variant="h3">
-        {plugin.name}
-      </Typography>
-      <Typography variant="h4" color="text.secondary">
-        {plugin.description}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      {plugin.github
-        && (
-          <Button href={plugin.github} startIcon={<GitHubIcon size="small" />}>
-            Github
-          </Button>
-        )}
-      {plugin.npm
-        && (
-          <Button href={`https://www.npmjs.com/package/${plugin.npm}`} startIcon={<DownloadIcon size="small" />}>
-            {plugin.npm}
-          </Button>
-        )}
-      {plugin.demo
-        && (
-          <Button href={plugin.demo} startIcon={<SlideshowIcon size="small" />}>
-
-            demo
-          </Button>
-        )}
-    </CardActions>
-  </Card>
-);
-
-const PluginList = ({ category }) => (
-  data.filter(plugin => plugin.categorie === category).map(
-    plugin => <MediaCard plugin={plugin} />,
-  )
-);
+import PluginList from './PluginList';
 
 const arrayDedup = arr => Array.from(new Set(arr));
 const categoryDetails = arrayDedup(data.map(cur => cur.categorie));
 
 const App = () => (
   <>
-    {categoryDetails.map(categories => (
-      <>
-        <Typography variant="h2">{categories}</Typography>
-        <PluginList category={categories} />
-      </>
-    ))}
+    <Box width="100%" bgcolor="#20273c">
+      <Box component="img" src={MakinaLogo} alt="Makina OSS" width={600} mx="auto" display="block" py={10} />
+    </Box>
+    <Box maxWidth="700px" mx="auto" my={10}>
+      {categoryDetails.map(category => (
+        <PluginList category={category} data={data} />
+      ))}
+    </Box>
   </>
 );
 
