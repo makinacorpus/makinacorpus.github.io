@@ -33,6 +33,7 @@ const App = () => (
       ))}
     </Box>
     <Box
+      className="footer"
       width="100%"
       bgcolor="#20273c"
       sx={{
