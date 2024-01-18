@@ -5,7 +5,6 @@ import GithubLogo from '../icons/github.svg';
 
 const FooterB = () => (
   <Box
-    className="BoxB"
     width="100%"
     sx={{
       display: 'flex',
