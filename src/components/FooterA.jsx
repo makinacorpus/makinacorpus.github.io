@@ -26,7 +26,6 @@ const FooterA = () => (
       src={MakinaOSSLogo}
       alt="Makina OSS Logo"
       width={150}
-      paddingRight="7px"
     />
     2024 - Makina Corpus
   </Box>
