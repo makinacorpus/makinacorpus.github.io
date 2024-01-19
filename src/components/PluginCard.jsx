@@ -8,7 +8,15 @@ import { IconButton, Stack, Tooltip } from '@mui/material';
 import NpmIcon from '../icons/NpmIcon';
 
 const PluginCard = ({ plugin }) => (
-  <Card sx={{ display: 'flex' }}>
+  <Card
+    sx={{
+      display: 'flex',
+      flexDirection: {
+        sm: 'row',
+        xs: 'column',
+      },
+    }}
+  >
     <CardContent sx={{ width: '100%' }}>
       <Typography gutterBottom variant="h5">
         {plugin.name}
@@ -16,7 +24,20 @@ const PluginCard = ({ plugin }) => (
       <Typography variant="body" color="text.secondary">
         {plugin.description}
       </Typography>
-      <Stack direction="row" spacing={1} mt={2}>
+      <Stack
+        direction="row"
+        spacing={{
+          sm: 1,
+          xs: 0,
+        }}
+        mt={2}
+        sx={{
+          flexDirection: {
+            sm: 'row',
+            xs: 'column',
+          },
+        }}
+      >
         {plugin.github && (
           <a href={plugin.github}>
             <img
