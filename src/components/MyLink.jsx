@@ -1,12 +1,13 @@
 import { Box } from '@mui/material';
 import Link from '@mui/material/Link';
 
-const Lien = ({ link, logo, src, description }) => (
+const MyLink = ({ link, logo, src, description }) => (
   <Link
     display="flex"
     alignItems="center"
-    paddingBottom="10px"
-    paddingTop="10px"
+    fontSize="0.9em"
+    paddingBottom="6px"
+    paddingTop="6px"
     href={link}
     variant="h7"
     underline="hover"
@@ -28,4 +29,4 @@ const Lien = ({ link, logo, src, description }) => (
   </Link>
 );
 
-export default Lien;
+export default MyLink;

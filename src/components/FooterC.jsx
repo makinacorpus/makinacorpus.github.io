@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import Lien from './Link';
+import MyLink from './MyLink';
 
 const FooterC = () => (
   <Box
@@ -11,8 +11,8 @@ const FooterC = () => (
       alignItems: 'center',
     }}
   >
-    <Lien link="https://github.com/makinacorpus/makinacorpus.github.io" description="Edit this page" />
-    <Lien link="https://github.com/orgs/makinacorpus/repositories?type=source" description="Repositories list" />
+    <MyLink link="https://github.com/makinacorpus/makinacorpus.github.io" description="Edit this page" />
+    <MyLink link="https://github.com/orgs/makinacorpus/repositories?type=source" description="Repositories list" />
   </Box>
 );
 

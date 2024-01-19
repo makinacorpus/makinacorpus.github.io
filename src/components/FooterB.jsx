@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import Lien from './Link';
+import MyLink from './MyLink';
 import MakinaLogo from '../favicon.svg';
 import GithubLogo from '../icons/github.svg';
 
@@ -28,10 +28,11 @@ const FooterB = () => (
         xs: 'solid',
       },
       borderColor: '#d0dd2a',
+      borderWidth: '1px',
     }}
   >
-    <Lien link="https://makinacorpus.com" logo="Makina Corpus logo" src={MakinaLogo} description="Makina Corpus" />
-    <Lien link="https://github.com/makinacorpus" logo="Github logo" src={GithubLogo} description="Github" />
+    <MyLink link="https://makinacorpus.com" logo="Makina Corpus logo" src={MakinaLogo} description="Makina Corpus" />
+    <MyLink link="https://github.com/makinacorpus" logo="Github logo" src={GithubLogo} description="Github" />
   </Box>
 );
 

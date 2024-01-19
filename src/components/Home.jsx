@@ -36,18 +36,25 @@ const App = () => (
       className="footer"
       width="100%"
       bgcolor="#20273c"
-      sx={{
-        display: 'flex',
-        flexDirection: {
-          sm: 'row',
-          xs: 'column',
-        },
-        height: '100%',
-      }}
     >
-      <FooterA />
-      <FooterB />
-      <FooterC />
+      <Box
+        maxWidth="800px"
+        marginX="auto"
+        width="100%"
+        sx={{
+          display: 'flex',
+          flexDirection: {
+            sm: 'row',
+            xs: 'column',
+          },
+          height: '100%',
+          padding: '40px',
+        }}
+      >
+        <FooterA />
+        <FooterB />
+        <FooterC />
+      </Box>
     </Box>
   </>
 );
