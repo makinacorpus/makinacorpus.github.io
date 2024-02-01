@@ -112,5 +112,20 @@
         "github": "https://github.com/makinacorpus/Leaflet.Compass",
         "description": "Compass Plugin for leaflet and PhoneGap application",
         "categorie": "Leaflet"
+    },
+    {
+        "name": "mapbox-gl-path",
+        "github": "https://github.com/makinacorpus/mapbox-gl-path",
+        "npm": "@makina-corpus/mapbox-gl-path",
+        "demo": "https://mapbox-gl-path.netlify.app/",
+        "description": "Create path with or without help of various directions API",
+        "categorie": "Mapbox GL"
+    },
+    {
+        "name": "mapbox-gl-forbidden-area",
+        "github": "https://github.com/makinacorpus/mapbox-gl-forbidden-area",
+        "npm": "@makina-corpus/mapbox-gl-forbidden-area",
+        "description": "Disable events on feature collection",
+        "categorie": "Mapbox GL"
     }
 ]
