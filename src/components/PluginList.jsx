@@ -11,7 +11,7 @@ const PluginList = ({ category, data }) => {
 
   return (
     <>
-      <Stack direction="row" alignItems="center" justifyContent="space-between" mb={3}>
+      <Stack id={category} direction="row" alignItems="center" justifyContent="space-between" my={3}>
         <Typography variant="h2">{category}</Typography>
         <Tooltip title={isOpen ? `Hide ${plugins.length} elements` : `Show ${plugins.length} elements`}>
           <IconButton onClick={() => setIsOpen(!isOpen)}>
@@ -22,7 +22,7 @@ const PluginList = ({ category, data }) => {
       <Collapse in={isOpen}>
         <Stack spacing={3}>
           {plugins.map(plugin => (
-            <PluginCard plugin={plugin} />
+            <PluginCard key={plugin.name} plugin={plugin} />
           ))}
         </Stack>
       </Collapse>

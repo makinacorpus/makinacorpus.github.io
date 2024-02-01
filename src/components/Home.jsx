@@ -10,7 +10,7 @@ const arrayDedup = arr => Array.from(new Set(arr));
 const categoryDetails = arrayDedup(data.map(cur => cur.categorie));
 
 const App = () => (
-  <>
+  <Box display="flex" flexDirection="column" minHeight="calc(100vh - 5px)">
     <Box width="100%" bgcolor="#20273c">
       <Box
         component="img"
@@ -27,9 +27,9 @@ const App = () => (
         }}
       />
     </Box>
-    <Box width="100%" maxWidth="700px" mx="auto" my={10}>
+    <Box width="100%" maxWidth="700px" mx="auto" my={10} flex="1">
       {categoryDetails.map(category => (
-        <PluginList category={category} data={data} />
+        <PluginList key={category} category={category} data={data} />
       ))}
     </Box>
     <Box
@@ -56,7 +56,7 @@ const App = () => (
         <FooterC />
       </Box>
     </Box>
-  </>
+  </Box>
 );
 
 export default App;
