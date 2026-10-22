@@ -1,10 +1,10 @@
 [
     {
-        "name": "Leaflet.Filelayer",
+        "name": "Leaflet.FileLayer",
         "github": "https://github.com/makinacorpus/Leaflet.FileLayer",
         "npm": "leaflet-filelayer",
         "demo": "https://makinacorpus.github.io/Leaflet.FileLayer/",
-        "description": " Loads files locally (GeoJSON, KML, GPX) as layers using HTML5 File API",
+        "description": "Loads files locally (GeoJSON, KML, GPX) as layers using HTML5 File API",
         "categorie": "Leaflet"
     },
     {
@@ -12,7 +12,8 @@
         "github": "https://github.com/makinacorpus/Leaflet.GeometryUtil",
         "npm": "leaflet-geometryutil",
         "description": "Leaflet utility function on geometries",
-        "categorie": "Leaflet"
+        "categorie": "Leaflet",
+        "doc": "https://makinacorpus.github.io/Leaflet.GeometryUtil/"
     },
     {
         "name": "Leaflet.TextPath",
@@ -33,6 +34,7 @@
     {
         "name": "Leaflet.LineExtremities",
         "github": "https://github.com/makinacorpus/Leaflet.LineExtremities",
+        "npm": "leaflet-lineextremities",
         "demo": "https://makinacorpus.github.io/Leaflet.LineExtremities/",
         "description": "Displays the extremities of a Polyline",
         "categorie": "Leaflet"
@@ -40,7 +42,7 @@
     {
         "name": "Leaflet.RestoreView",
         "github": "https://github.com/makinacorpus/Leaflet.RestoreView",
-        "npm": "@bagage/leaflet.restoreview",
+        "npm": "@makina-corpus/leaflet.restoreview",
         "demo": "https://makinacorpus.github.io/Leaflet.RestoreView/",
         "description": "Save and restore view from localStorage",
         "categorie": "Leaflet"
@@ -72,7 +74,7 @@
         "github": "https://github.com/makinacorpus/Leaflet.MeasureControl",
         "npm": "leaflet.measurecontrol",
         "demo": "https://makinacorpus.github.io/Leaflet.MeasureControl/",
-        "description": "Leaflet control to mesure distances on the map",
+        "description": "Leaflet control to measure distances on the map",
         "categorie": "Leaflet"
     },
     {

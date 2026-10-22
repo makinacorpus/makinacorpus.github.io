@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import { IconButton, Stack, Tooltip } from '@mui/material';
 import NpmIcon from '../icons/NpmIcon';
 
@@ -85,6 +86,13 @@ const PluginCard = ({ plugin }) => (
         <Tooltip title="Demo">
           <IconButton href={plugin.demo}>
             <SlideshowIcon size="small" />
+          </IconButton>
+        </Tooltip>
+      )}
+      {plugin.doc && (
+        <Tooltip title="Documentation">
+          <IconButton href={plugin.doc}>
+            <MenuBookIcon size="small" />
           </IconButton>
         </Tooltip>
       )}
